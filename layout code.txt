@@ -1,20 +1,3 @@
-add credit at the top
-explain the text/image module
-- provide code for image module in the text box
-try and/or apologize about the mobile issue
-comment footer text
-tag cloud
-don't forget font stylesheet
-share on the layouts comm
-try to check resolution
-
-
-
-
-
-
-
-
 #canvas { 
  background: #ddd; 
  padding: 0 30px; 
