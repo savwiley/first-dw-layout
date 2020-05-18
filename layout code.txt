@@ -237,9 +237,6 @@ ul.entry-management-links, ul.entry-interaction-links {
 .comment .footer a:hover { 
  color: #1f3661; 
 }
-.comment .footer input, .comment .footer select {
- font-family: Economica;
-}
 
 .comment-interaction-links, .comment-management-links { 
  display: inline; 
