@@ -1,3 +1,6 @@
+body {
+ background: #ddd;
+}
 #canvas { 
  background: #ddd; 
  padding: 0 30px; 
@@ -34,6 +37,15 @@ h2#subtitle {
 
 h2#pagetitle { 
  display:none; 
+}
+
+@media (max-width:800px){
+ h1#title {
+  font-size: 40px;
+ }
+ h2#subtitle {
+  display:none;
+ }
 }
 
 /*--------------------CONTENT--------------------*/
@@ -163,6 +175,26 @@ ul.entry-management-links, ul.entry-interaction-links {
  display:none;
 }
 
+@media (max-width: 800px){
+ .entry {
+  margin-left: 0;
+ }
+ .entry .userpic {
+  width: 75px;
+ }
+ .entry .userpic img {
+  width: 75px;
+  height: 75px;
+ }
+ .entry-content {
+  padding: 5px 10px 5px 75px;
+ }
+ blockquote {
+  width: 150%;
+  margin-right: 75px;
+ }
+}
+
 /*--------------------COMMENTS--------------------*/
 
 .comment-pages { 
@@ -204,6 +236,9 @@ ul.entry-management-links, ul.entry-interaction-links {
 }
 .comment .footer a:hover { 
  color: #1f3661; 
+}
+.comment .footer input, .comment .footer select {
+ font-family: Economica;
 }
 
 .comment-interaction-links, .comment-management-links { 
@@ -434,6 +469,15 @@ table.month td.day-has-entries a:hover {
  color: #1f3661; 
 }
 
+@media (max-width: 800px){
+ .module-navlinks {
+  font-size: 15px;
+ }
+ .module-navlinks li {
+  margin: 0 5px;
+ }
+}
+
 /*--------------------MODULES--------------------*/
 
 .module .manage-link a{
@@ -532,8 +576,20 @@ table.month td.day-has-entries a:hover {
 .module-tags_list li a:hover {
  color: #1f3661;
 }
+.module-tags_cloud a{ 
+ font-family: Economica; 
+ font-variant: small-caps;
+ font-size: 18px;
+ color: #4284ff; 
+ font-weight: bold;
+ text-decoration: none; 
+ transition: color 2s;
+}
+.module-tags_cloud a:hover {
+ color: #1f3661;
+}
 
-.module h2, .module-userprofile, .module-cuttagcontrols, .module-credit, .module-syndicate, .module-subscriptionfilters, .module-search, .module-time, .module-powered, .module-pagesummary { 
+.module h2, .module-userprofile, .module-cuttagcontrols, .module-credit, .module-syndicate, .module-subscriptionfilters, .module-search, .module-time, .module-powered, .module-pagesummary, .module-calendar { 
  display:none; 
 }
 
@@ -624,6 +680,11 @@ table.month td.day-has-entries a:hover {
 
 
 
+/*---- To change the sidebar to either a custom text or image (this layout doesn't support both) use the codes below. It doesn't matter where in the code you put them, so long as they aren't surrounded by the hyphen/slash thing. You'll find both of these under the MODULES section of this code. The default is the image version.
+
+If you want the image, make sure to go to killthecake.dreamwidth.org/18293.html to get the code to put in your Custom Text field under the Text tab. ----*/
+
+
 /*---- CUSTOM TEXT
 
 .module-customtext {
@@ -647,3 +708,7 @@ table.month td.day-has-entries a:hover {
 }
 
 ----*/
+
+
+/*----------MADE BY KILLTHECAKE----------*/
+/*-----Please add credit somewhere, thanks-----*/
